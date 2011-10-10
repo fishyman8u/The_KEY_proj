@@ -30,7 +30,7 @@
 #ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
 
 #import "../../CCDirector.h"
-#import "kazmath/mat4.h"
+#import "mat4.h"
 
 /** CCDirector extensions for iPhone
  */

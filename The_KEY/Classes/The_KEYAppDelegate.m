@@ -12,7 +12,7 @@
 #import "The_KEYLayer.h"
 #import "The_KEYWorld.h"
 #import "CC3EAGLView.h"
-
+#import "GameScene.h"
 @implementation The_KEYAppDelegate
 
 @synthesize window;
@@ -86,13 +86,13 @@
 	
 	// Create the customized CC3Layer that supports 3D rendering,
 	// and schedule it for automatic updates
-	CC3Layer* cc3Layer = [The_KEYLayer node];
-	[cc3Layer scheduleUpdate];
+	//CC3Layer* cc3Layer = [The_KEYLayer node];
+	//[cc3Layer scheduleUpdate];
 	
 	// Create the customized 3D world, attach it to the layer, and start it playing.
-	cc3Layer.cc3World = [The_KEYWorld world];
+	//cc3Layer.cc3World = [The_KEYWorld world];
 
-	ControllableCCLayer* mainLayer = cc3Layer;
+	//ControllableCCLayer* mainLayer = cc3Layer;
 	
 	// The 3D layer can run either direcly in the scene, or it can run as a smaller "sub-window"
 	// within any standard CCLayer. So you can have a mostly 2D window, with a smaller 3D window
@@ -115,15 +115,16 @@
 	// changes, or if you want to display a device camera behind a combined 3D & 2D scene
 	// (augmented reality), use a controller. Otherwise you can simply remove the following lines
 	// and uncomment the lines below these lines that uses the traditional CCDirector scene startup.
-	viewController = [[CCNodeController controller] retain];
-	viewController.doesAutoRotate = YES;
-	[viewController runSceneOnNode: mainLayer];		// attach the layer to the controller and run a scene with it
+	//viewController = [[CCNodeController controller] retain];
+	//viewController.doesAutoRotate = YES;
+	//[viewController runSceneOnNode: mainLayer];		// attach the layer to the controller and run a scene with it
 	
 	// If a controller is NOT used, uncomment the following standard CCDirector scene startup lines,
 	// and remove the lines above that reference viewContoller.
 //	CCScene *scene = [CCScene node];
 //	[scene addChild: mainLayer];
 //	[[CCDirector sharedDirector] runWithScene: scene];
+    [[CCDirector sharedDirector] runWithScene:[GameScene node]];
 	
 }
 
