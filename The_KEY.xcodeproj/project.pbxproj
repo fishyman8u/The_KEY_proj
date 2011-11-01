@@ -11,12 +11,21 @@
 		F01103A5143B6865005B8320 /* ipad_back_test_portrait-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F01103A4143B6865005B8320 /* ipad_back_test_portrait-01.png */; };
 		F020A8DC144117D0001DD4BC /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F020A8DB144117D0001DD4BC /* GameObject.m */; };
 		F020A8DF144117E9001DD4BC /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = F020A8DE144117E9001DD4BC /* GameCharacter.m */; };
-		F020A8E51441188E001DD4BC /* GameObject3D.m in Sources */ = {isa = PBXBuildFile; fileRef = F020A8E41441188E001DD4BC /* GameObject3D.m */; };
-		F0225C4F143BA1B800B7BFC1 /* Air_Force_Commando.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0225C4E143BA1B800B7BFC1 /* Air_Force_Commando.plist */; };
+		F0225C4F143BA1B800B7BFC1 /* AFC.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0225C4E143BA1B800B7BFC1 /* AFC.plist */; };
+		F0246271145F4792008CB41B /* Box2D_Test.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0246270145F4792008CB41B /* Box2D_Test.mm */; };
 		F04105C71441255900158A7B /* AFC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04105C61441255900158A7B /* AFC.m */; };
 		F04105CC1441290700158A7B /* Generic_Soldier.m in Sources */ = {isa = PBXBuildFile; fileRef = F04105CB1441290600158A7B /* Generic_Soldier.m */; };
 		F04105D2144137F000158A7B /* StaticMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = F04105D1144137F000158A7B /* StaticMesh.m */; };
 		F04105D4144138A300158A7B /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = F04105D3144138A300158A7B /* TODO */; };
+		F042ED001455E2A10046D6F6 /* Test_Tileset.png in Resources */ = {isa = PBXBuildFile; fileRef = F042ECFE1455E2A10046D6F6 /* Test_Tileset.png */; };
+		F042ED011455E2A10046D6F6 /* test_tileset.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F042ECFF1455E2A10046D6F6 /* test_tileset.tmx */; };
+		F04753E61454D1DE00F8FA1A /* Main_Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753E51454D1DE00F8FA1A /* Main_Menu.m */; };
+		F04753EA1454EACF00F8FA1A /* GameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = F04753E91454EACF00F8FA1A /* GameManager.mm */; };
+		F04753ED1454EBF000F8FA1A /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753EC1454EBF000F8FA1A /* OptionsScene.m */; };
+		F04753F01454EC0200F8FA1A /* CreditsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753EF1454EC0200F8FA1A /* CreditsScene.m */; };
+		F04753F31454EC1100F8FA1A /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753F21454EC1100F8FA1A /* IntroScene.m */; };
+		F04753F61454EC2400F8FA1A /* LevelComplete.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753F51454EC2400F8FA1A /* LevelComplete.m */; };
+		F04753FA1454F1B200F8FA1A /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F04753F91454F1B200F8FA1A /* MainMenuScene.m */; };
 		F059285D14392A2A00DEEDFB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F059285C14392A2A00DEEDFB /* QuartzCore.framework */; };
 		F059285F14392A2A00DEEDFB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F059285E14392A2A00DEEDFB /* OpenGLES.framework */; };
 		F059286114392A2A00DEEDFB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F059286014392A2A00DEEDFB /* OpenAL.framework */; };
@@ -164,6 +173,10 @@
 		F0592B201439321200DEEDFB /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0592B1F1439321200DEEDFB /* GameplayLayer.m */; };
 		F0592B23143933AF00DEEDFB /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F0592B22143933AF00DEEDFB /* GameScene.m */; };
 		F0592B261439342200DEEDFB /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0592B251439342200DEEDFB /* BackgroundLayer.m */; };
+		F0679E7B145A1CDC00A46720 /* Test_Tileset_2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F0679E7A145A1CDC00A46720 /* Test_Tileset_2.tmx */; };
+		F08F0AD2145E49140015049B /* GameObject3D.mm in Sources */ = {isa = PBXBuildFile; fileRef = F08F0AD1145E49140015049B /* GameObject3D.mm */; };
+		F0AE2C37144F72D300EF56F0 /* Standins Sheet_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0AE2C35144F72D300EF56F0 /* Standins Sheet_default.plist */; };
+		F0AE2C38144F72D300EF56F0 /* Standins Sheet_default.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AE2C36144F72D300EF56F0 /* Standins Sheet_default.png */; };
 		F0AFED9714393C350022241A /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFECF014393C350022241A /* CCAction.m */; };
 		F0AFED9814393C350022241A /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFECF214393C350022241A /* CCActionCamera.m */; };
 		F0AFED9914393C350022241A /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AFECF414393C350022241A /* CCActionEase.m */; };
@@ -251,11 +264,15 @@
 		F0AFEDFB143951700022241A /* Joystick_Cross_Hairs-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AFEDF91439516F0022241A /* Joystick_Cross_Hairs-01.png */; };
 		F0AFEDFE1439591C0022241A /* button_base-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AFEDFC1439591C0022241A /* button_base-01.png */; };
 		F0AFEDFF1439591C0022241A /* Button_Pressed-01.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AFEDFD1439591C0022241A /* Button_Pressed-01.png */; };
+		F0DC5FC3144E27A600BAFFE7 /* bullet.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0DC5FC2144E27A600BAFFE7 /* bullet.plist */; };
 		F0E37E301442408A00A829CF /* bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E37E2F1442408A00A829CF /* bullet.m */; };
-		F0EAF608143D0785009B4397 /* Standins Sheet_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EAF606143D0785009B4397 /* Standins Sheet_default.plist */; };
-		F0EAF609143D0785009B4397 /* Standins Sheet_default.png.ccz in Resources */ = {isa = PBXBuildFile; fileRef = F0EAF607143D0785009B4397 /* Standins Sheet_default.png.ccz */; };
-		F0EAF60D143D0791009B4397 /* Standins Sheet_default.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0EAF60B143D0791009B4397 /* Standins Sheet_default.plist */; };
-		F0EAF60E143D0791009B4397 /* Standins Sheet_default.png in Resources */ = {isa = PBXBuildFile; fileRef = F0EAF60C143D0791009B4397 /* Standins Sheet_default.png */; };
+		F0F342E21455B46D00456FEB /* The Key Front Cover sm copy.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F342E11455B46D00456FEB /* The Key Front Cover sm copy.png */; };
+		F0F342E61455B5E700456FEB /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F342E41455B5E700456FEB /* button.png */; };
+		F0F342E71455B5E700456FEB /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F342E51455B5E700456FEB /* button1.png */; };
+		F0F342E91455C2DC00456FEB /* The_Key_IPAD_Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F342E81455C2DC00456FEB /* The_Key_IPAD_Cover.png */; };
+		F0F343011455DA3C00456FEB /* ControlLayer2d.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F343001455DA3C00456FEB /* ControlLayer2d.m */; };
+		F0F343051455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F343041455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.m */; };
+		F0F343081455DC6200456FEB /* GameScene2.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F343071455DC6200456FEB /* GameScene2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,11 +282,11 @@
 		F020A8DB144117D0001DD4BC /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
 		F020A8DD144117E9001DD4BC /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
 		F020A8DE144117E9001DD4BC /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
-		F020A8E31441188E001DD4BC /* GameObject3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject3D.h; sourceTree = "<group>"; };
-		F020A8E41441188E001DD4BC /* GameObject3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject3D.m; sourceTree = "<group>"; };
 		F020A8E914411A05001DD4BC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		F020A8EA14411A2E001DD4BC /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
-		F0225C4E143BA1B800B7BFC1 /* Air_Force_Commando.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Air_Force_Commando.plist; sourceTree = "<group>"; };
+		F0225C4E143BA1B800B7BFC1 /* AFC.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AFC.plist; sourceTree = "<group>"; };
+		F024626F145F4792008CB41B /* Box2D_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D_Test.h; sourceTree = "<group>"; };
+		F0246270145F4792008CB41B /* Box2D_Test.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Box2D_Test.mm; sourceTree = "<group>"; };
 		F04105C51441255900158A7B /* AFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFC.h; sourceTree = "<group>"; };
 		F04105C61441255900158A7B /* AFC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFC.m; sourceTree = "<group>"; };
 		F04105CA1441290600158A7B /* Generic_Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generic_Soldier.h; sourceTree = "<group>"; };
@@ -277,6 +294,22 @@
 		F04105D0144137F000158A7B /* StaticMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticMesh.h; sourceTree = "<group>"; };
 		F04105D1144137F000158A7B /* StaticMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticMesh.m; sourceTree = "<group>"; };
 		F04105D3144138A300158A7B /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		F042ECFE1455E2A10046D6F6 /* Test_Tileset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Test_Tileset.png; sourceTree = "<group>"; };
+		F042ECFF1455E2A10046D6F6 /* test_tileset.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_tileset.tmx; sourceTree = "<group>"; };
+		F04753E41454D1DE00F8FA1A /* Main_Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_Menu.h; sourceTree = "<group>"; };
+		F04753E51454D1DE00F8FA1A /* Main_Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_Menu.m; sourceTree = "<group>"; };
+		F04753E81454EACF00F8FA1A /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		F04753E91454EACF00F8FA1A /* GameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameManager.mm; sourceTree = "<group>"; };
+		F04753EB1454EBF000F8FA1A /* OptionsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsScene.h; sourceTree = "<group>"; };
+		F04753EC1454EBF000F8FA1A /* OptionsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsScene.m; sourceTree = "<group>"; };
+		F04753EE1454EC0200F8FA1A /* CreditsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsScene.h; sourceTree = "<group>"; };
+		F04753EF1454EC0200F8FA1A /* CreditsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsScene.m; sourceTree = "<group>"; };
+		F04753F11454EC1100F8FA1A /* IntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroScene.h; sourceTree = "<group>"; };
+		F04753F21454EC1100F8FA1A /* IntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroScene.m; sourceTree = "<group>"; };
+		F04753F41454EC2400F8FA1A /* LevelComplete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelComplete.h; sourceTree = "<group>"; };
+		F04753F51454EC2400F8FA1A /* LevelComplete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelComplete.m; sourceTree = "<group>"; };
+		F04753F81454F1B200F8FA1A /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		F04753F91454F1B200F8FA1A /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
 		F059285814392A2A00DEEDFB /* The_KEY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = The_KEY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F059285C14392A2A00DEEDFB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F059285E14392A2A00DEEDFB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -536,6 +569,11 @@
 		F0592B22143933AF00DEEDFB /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		F0592B241439342200DEEDFB /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		F0592B251439342200DEEDFB /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		F0679E7A145A1CDC00A46720 /* Test_Tileset_2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Test_Tileset_2.tmx; sourceTree = "<group>"; };
+		F08F0AD0145E49140015049B /* GameObject3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject3D.h; path = ../GameObject3D.h; sourceTree = "<group>"; };
+		F08F0AD1145E49140015049B /* GameObject3D.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameObject3D.mm; path = ../GameObject3D.mm; sourceTree = "<group>"; };
+		F0AE2C35144F72D300EF56F0 /* Standins Sheet_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Standins Sheet_default.plist"; sourceTree = "<group>"; };
+		F0AE2C36144F72D300EF56F0 /* Standins Sheet_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standins Sheet_default.png"; sourceTree = "<group>"; };
 		F0AFECEF14393C350022241A /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		F0AFECF014393C350022241A /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		F0AFECF114393C350022241A /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -717,12 +755,19 @@
 		F0AFEDF91439516F0022241A /* Joystick_Cross_Hairs-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Joystick_Cross_Hairs-01.png"; sourceTree = "<group>"; };
 		F0AFEDFC1439591C0022241A /* button_base-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_base-01.png"; sourceTree = "<group>"; };
 		F0AFEDFD1439591C0022241A /* Button_Pressed-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button_Pressed-01.png"; sourceTree = "<group>"; };
+		F0DC5FC2144E27A600BAFFE7 /* bullet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bullet.plist; sourceTree = "<group>"; };
 		F0E37E2E1442408A00A829CF /* bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bullet.h; sourceTree = "<group>"; };
 		F0E37E2F1442408A00A829CF /* bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bullet.m; sourceTree = "<group>"; };
-		F0EAF606143D0785009B4397 /* Standins Sheet_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Standins Sheet_default.plist"; sourceTree = "<group>"; };
-		F0EAF607143D0785009B4397 /* Standins Sheet_default.png.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Standins Sheet_default.png.ccz"; sourceTree = "<group>"; };
-		F0EAF60B143D0791009B4397 /* Standins Sheet_default.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Standins Sheet_default.plist"; sourceTree = "<group>"; };
-		F0EAF60C143D0791009B4397 /* Standins Sheet_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Standins Sheet_default.png"; sourceTree = "<group>"; };
+		F0F342E11455B46D00456FEB /* The Key Front Cover sm copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Key Front Cover sm copy.png"; sourceTree = "<group>"; };
+		F0F342E41455B5E700456FEB /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		F0F342E51455B5E700456FEB /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		F0F342E81455C2DC00456FEB /* The_Key_IPAD_Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = The_Key_IPAD_Cover.png; sourceTree = "<group>"; };
+		F0F342FF1455DA3B00456FEB /* ControlLayer2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControlLayer2d.h; path = ../ControlLayer2d.h; sourceTree = "<group>"; };
+		F0F343001455DA3C00456FEB /* ControlLayer2d.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControlLayer2d.m; path = ../ControlLayer2d.m; sourceTree = "<group>"; };
+		F0F343031455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scrolling_Tilemap_Gameplay_test.h; sourceTree = "<group>"; };
+		F0F343041455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scrolling_Tilemap_Gameplay_test.m; sourceTree = "<group>"; };
+		F0F343061455DC6200456FEB /* GameScene2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene2.h; sourceTree = "<group>"; };
+		F0F343071455DC6200456FEB /* GameScene2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -744,11 +789,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F020A8D914411768001DD4BC /* Old Layers */ = {
+		F02462E4145F4D04008CB41B /* BOX 2d */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "Old Layers";
+			name = "BOX 2d";
 			sourceTree = "<group>";
 		};
 		F04105C91441284C00158A7B /* UI Objects */ = {
@@ -784,8 +829,9 @@
 		F059284D14392A2900DEEDFB = {
 			isa = PBXGroup;
 			children = (
-				F0EAF60B143D0791009B4397 /* Standins Sheet_default.plist */,
-				F0EAF60C143D0791009B4397 /* Standins Sheet_default.png */,
+				F0679E7A145A1CDC00A46720 /* Test_Tileset_2.tmx */,
+				F042ECFE1455E2A10046D6F6 /* Test_Tileset.png */,
+				F042ECFF1455E2A10046D6F6 /* test_tileset.tmx */,
 				F059286C14392A2A00DEEDFB /* The_KEY */,
 				F059285B14392A2A00DEEDFB /* Frameworks */,
 				F059285914392A2A00DEEDFB /* Products */,
@@ -1154,16 +1200,12 @@
 		F0592ACF14392A3200DEEDFB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F0592AEF14392B6B00DEEDFB /* Layers */,
+				F02462E4145F4D04008CB41B /* BOX 2d */,
 				F0592AFA14392CDB00DEEDFB /* Joystick Classes */,
 				F0592AF814392C9100DEEDFB /* Singletons */,
 				F0592AF214392C2900DEEDFB /* Game Objects */,
 				F0592AF114392C1800DEEDFB /* Constants */,
 				F0592AF014392C0A00DEEDFB /* Scenes */,
-				F0592AD314392A3200DEEDFB /* The_KEYLayer.h */,
-				F0592AD414392A3200DEEDFB /* The_KEYLayer.m */,
-				F0592AD614392A3200DEEDFB /* The_KEYWorld.h */,
-				F0592AD714392A3200DEEDFB /* The_KEYWorld.m */,
 				F0EAF605143D0785009B4397 /* Standins */,
 			);
 			name = Classes;
@@ -1172,7 +1214,8 @@
 		F0592AE914392AA100DEEDFB /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				F0225C4E143BA1B800B7BFC1 /* Air_Force_Commando.plist */,
+				F0225C4E143BA1B800B7BFC1 /* AFC.plist */,
+				F0DC5FC2144E27A600BAFFE7 /* bullet.plist */,
 			);
 			name = Plists;
 			sourceTree = "<group>";
@@ -1199,6 +1242,10 @@
 		F0592AEB14392AC700DEEDFB /* 2D Images */ = {
 			isa = PBXGroup;
 			children = (
+				F0F342E81455C2DC00456FEB /* The_Key_IPAD_Cover.png */,
+				F0F342E41455B5E700456FEB /* button.png */,
+				F0F342E51455B5E700456FEB /* button1.png */,
+				F0F342E11455B46D00456FEB /* The Key Front Cover sm copy.png */,
 				F01103A4143B6865005B8320 /* ipad_back_test_portrait-01.png */,
 				F01103A1143B6733005B8320 /* ipad_test_background-01.png */,
 				F0AFEDFC1439591C0022241A /* button_base-01.png */,
@@ -1246,23 +1293,15 @@
 			name = "Core Source";
 			sourceTree = "<group>";
 		};
-		F0592AEF14392B6B00DEEDFB /* Layers */ = {
-			isa = PBXGroup;
-			children = (
-				F020A8D914411768001DD4BC /* Old Layers */,
-				F0592B1E1439321200DEEDFB /* GameplayLayer.h */,
-				F0592B1F1439321200DEEDFB /* GameplayLayer.m */,
-				F0592B241439342200DEEDFB /* BackgroundLayer.h */,
-				F0592B251439342200DEEDFB /* BackgroundLayer.m */,
-			);
-			name = Layers;
-			sourceTree = "<group>";
-		};
 		F0592AF014392C0A00DEEDFB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F0592B21143933AF00DEEDFB /* GameScene.h */,
-				F0592B22143933AF00DEEDFB /* GameScene.m */,
+				F0F342FA1455D95000456FEB /* Unused and Reference sources */,
+				F0F342F61455D8F500456FEB /* 3D Feature Testing */,
+				F0F342F51455D8DF00456FEB /* Transitions and Cutscenes */,
+				F0F342F41455D8AF00456FEB /* 2D Feature Testing */,
+				F0F342F31455D89000456FEB /* 2D Level Scenes Generic .plist loaded */,
+				F0F342F21455D88200456FEB /* Menus */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -1279,6 +1318,8 @@
 		F0592AF214392C2900DEEDFB /* Game Objects */ = {
 			isa = PBXGroup;
 			children = (
+				F08F0AD0145E49140015049B /* GameObject3D.h */,
+				F08F0AD1145E49140015049B /* GameObject3D.mm */,
 				F04105CD14412B5200158A7B /* AI Control Objects */,
 				F04105C91441284C00158A7B /* UI Objects */,
 				F0592AF714392C7800DEEDFB /* Neutral */,
@@ -1290,8 +1331,6 @@
 				F020A8DB144117D0001DD4BC /* GameObject.m */,
 				F020A8DD144117E9001DD4BC /* GameCharacter.h */,
 				F020A8DE144117E9001DD4BC /* GameCharacter.m */,
-				F020A8E31441188E001DD4BC /* GameObject3D.h */,
-				F020A8E41441188E001DD4BC /* GameObject3D.m */,
 				F04105CA1441290600158A7B /* Generic_Soldier.h */,
 				F04105CB1441290600158A7B /* Generic_Soldier.m */,
 				F04105D3144138A300158A7B /* TODO */,
@@ -1343,6 +1382,8 @@
 		F0592AF814392C9100DEEDFB /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				F04753E81454EACF00F8FA1A /* GameManager.h */,
+				F04753E91454EACF00F8FA1A /* GameManager.mm */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -1370,6 +1411,8 @@
 		F0592B0F14392D0B00DEEDFB /* Texture Atlases */ = {
 			isa = PBXGroup;
 			children = (
+				F0AE2C35144F72D300EF56F0 /* Standins Sheet_default.plist */,
+				F0AE2C36144F72D300EF56F0 /* Standins Sheet_default.png */,
 			);
 			name = "Texture Atlases";
 			sourceTree = "<group>";
@@ -1640,10 +1683,112 @@
 		F0EAF605143D0785009B4397 /* Standins */ = {
 			isa = PBXGroup;
 			children = (
-				F0EAF606143D0785009B4397 /* Standins Sheet_default.plist */,
-				F0EAF607143D0785009B4397 /* Standins Sheet_default.png.ccz */,
 			);
 			path = Standins;
+			sourceTree = "<group>";
+		};
+		F0F342F21455D88200456FEB /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				F0F342F71455D92400456FEB /* Layers */,
+				F04753E41454D1DE00F8FA1A /* Main_Menu.h */,
+				F04753E51454D1DE00F8FA1A /* Main_Menu.m */,
+				F04753EB1454EBF000F8FA1A /* OptionsScene.h */,
+				F04753EC1454EBF000F8FA1A /* OptionsScene.m */,
+				F04753EE1454EC0200F8FA1A /* CreditsScene.h */,
+				F04753EF1454EC0200F8FA1A /* CreditsScene.m */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		F0F342F31455D89000456FEB /* 2D Level Scenes Generic .plist loaded */ = {
+			isa = PBXGroup;
+			children = (
+				F0F342FB1455D9BB00456FEB /* Layers */,
+			);
+			name = "2D Level Scenes Generic .plist loaded";
+			sourceTree = "<group>";
+		};
+		F0F342F41455D8AF00456FEB /* 2D Feature Testing */ = {
+			isa = PBXGroup;
+			children = (
+				F0F342F81455D93100456FEB /* Layers */,
+				F0592B22143933AF00DEEDFB /* GameScene.m */,
+				F0592B21143933AF00DEEDFB /* GameScene.h */,
+				F0F343061455DC6200456FEB /* GameScene2.h */,
+				F0F343071455DC6200456FEB /* GameScene2.m */,
+			);
+			name = "2D Feature Testing";
+			sourceTree = "<group>";
+		};
+		F0F342F51455D8DF00456FEB /* Transitions and Cutscenes */ = {
+			isa = PBXGroup;
+			children = (
+				F0F342F91455D93E00456FEB /* Layers */,
+				F04753F11454EC1100F8FA1A /* IntroScene.h */,
+				F04753F21454EC1100F8FA1A /* IntroScene.m */,
+				F04753F41454EC2400F8FA1A /* LevelComplete.h */,
+				F04753F51454EC2400F8FA1A /* LevelComplete.m */,
+			);
+			name = "Transitions and Cutscenes";
+			sourceTree = "<group>";
+		};
+		F0F342F61455D8F500456FEB /* 3D Feature Testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "3D Feature Testing";
+			sourceTree = "<group>";
+		};
+		F0F342F71455D92400456FEB /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				F04753F81454F1B200F8FA1A /* MainMenuScene.h */,
+				F04753F91454F1B200F8FA1A /* MainMenuScene.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		F0F342F81455D93100456FEB /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				F0592B1F1439321200DEEDFB /* GameplayLayer.m */,
+				F0592B1E1439321200DEEDFB /* GameplayLayer.h */,
+				F0592B241439342200DEEDFB /* BackgroundLayer.h */,
+				F0592B251439342200DEEDFB /* BackgroundLayer.m */,
+				F0F343031455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.h */,
+				F0F343041455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.m */,
+				F024626F145F4792008CB41B /* Box2D_Test.h */,
+				F0246270145F4792008CB41B /* Box2D_Test.mm */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		F0F342F91455D93E00456FEB /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		F0F342FA1455D95000456FEB /* Unused and Reference sources */ = {
+			isa = PBXGroup;
+			children = (
+				F0592AD314392A3200DEEDFB /* The_KEYLayer.h */,
+				F0592AD414392A3200DEEDFB /* The_KEYLayer.m */,
+				F0592AD614392A3200DEEDFB /* The_KEYWorld.h */,
+				F0592AD714392A3200DEEDFB /* The_KEYWorld.m */,
+			);
+			name = "Unused and Reference sources";
+			sourceTree = "<group>";
+		};
+		F0F342FB1455D9BB00456FEB /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				F0F342FF1455DA3B00456FEB /* ControlLayer2d.h */,
+				F0F343001455DA3C00456FEB /* ControlLayer2d.m */,
+			);
+			name = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1680,6 +1825,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = F059284D14392A2900DEEDFB;
 			productRefGroup = F059285914392A2A00DEEDFB /* Products */;
@@ -1745,12 +1891,18 @@
 				F0AFEDFF1439591C0022241A /* Button_Pressed-01.png in Resources */,
 				F01103A2143B6733005B8320 /* ipad_test_background-01.png in Resources */,
 				F01103A5143B6865005B8320 /* ipad_back_test_portrait-01.png in Resources */,
-				F0225C4F143BA1B800B7BFC1 /* Air_Force_Commando.plist in Resources */,
-				F0EAF608143D0785009B4397 /* Standins Sheet_default.plist in Resources */,
-				F0EAF609143D0785009B4397 /* Standins Sheet_default.png.ccz in Resources */,
-				F0EAF60D143D0791009B4397 /* Standins Sheet_default.plist in Resources */,
-				F0EAF60E143D0791009B4397 /* Standins Sheet_default.png in Resources */,
+				F0225C4F143BA1B800B7BFC1 /* AFC.plist in Resources */,
 				F04105D4144138A300158A7B /* TODO in Resources */,
+				F0DC5FC3144E27A600BAFFE7 /* bullet.plist in Resources */,
+				F0AE2C37144F72D300EF56F0 /* Standins Sheet_default.plist in Resources */,
+				F0AE2C38144F72D300EF56F0 /* Standins Sheet_default.png in Resources */,
+				F0F342E21455B46D00456FEB /* The Key Front Cover sm copy.png in Resources */,
+				F0F342E61455B5E700456FEB /* button.png in Resources */,
+				F0F342E71455B5E700456FEB /* button1.png in Resources */,
+				F0F342E91455C2DC00456FEB /* The_Key_IPAD_Cover.png in Resources */,
+				F042ED001455E2A10046D6F6 /* Test_Tileset.png in Resources */,
+				F042ED011455E2A10046D6F6 /* test_tileset.tmx in Resources */,
+				F0679E7B145A1CDC00A46720 /* Test_Tileset_2.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1942,11 +2094,22 @@
 				F0AFEDF314393D200022241A /* ZFont.m in Sources */,
 				F020A8DC144117D0001DD4BC /* GameObject.m in Sources */,
 				F020A8DF144117E9001DD4BC /* GameCharacter.m in Sources */,
-				F020A8E51441188E001DD4BC /* GameObject3D.m in Sources */,
 				F04105C71441255900158A7B /* AFC.m in Sources */,
 				F04105CC1441290700158A7B /* Generic_Soldier.m in Sources */,
 				F04105D2144137F000158A7B /* StaticMesh.m in Sources */,
 				F0E37E301442408A00A829CF /* bullet.m in Sources */,
+				F04753E61454D1DE00F8FA1A /* Main_Menu.m in Sources */,
+				F04753EA1454EACF00F8FA1A /* GameManager.mm in Sources */,
+				F04753ED1454EBF000F8FA1A /* OptionsScene.m in Sources */,
+				F04753F01454EC0200F8FA1A /* CreditsScene.m in Sources */,
+				F04753F31454EC1100F8FA1A /* IntroScene.m in Sources */,
+				F04753F61454EC2400F8FA1A /* LevelComplete.m in Sources */,
+				F04753FA1454F1B200F8FA1A /* MainMenuScene.m in Sources */,
+				F0F343011455DA3C00456FEB /* ControlLayer2d.m in Sources */,
+				F0F343051455DC3700456FEB /* Scrolling_Tilemap_Gameplay_test.m in Sources */,
+				F0F343081455DC6200456FEB /* GameScene2.m in Sources */,
+				F08F0AD2145E49140015049B /* GameObject3D.mm in Sources */,
+				F0246271145F4792008CB41B /* Box2D_Test.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2031,9 +2194,20 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = The_KEY/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
+				"HEADER_SEARCH_PATHS[arch=*]" = The_KEY/libs;
 				INFOPLIST_FILE = The_KEY/Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Extras/CDTestFramework/AntTweakBar/examples\"",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Extras/CDTestFramework/AntTweakBar/lib\"",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Glut\"",
+				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = The_KEY/The_KEY/Libs;
+				USER_HEADER_SEARCH_PATHS = The_Key/libs;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2046,9 +2220,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = The_KEY/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = The_KEY/libs;
 				INFOPLIST_FILE = The_KEY/Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Extras/CDTestFramework/AntTweakBar/examples\"",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Extras/CDTestFramework/AntTweakBar/lib\"",
+					"\"$(SRCROOT)/../../Programming Tools/bullet-2.79/Glut\"",
+				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = The_KEY/The_KEY/Libs;
+				USER_HEADER_SEARCH_PATHS = The_Key/libs;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

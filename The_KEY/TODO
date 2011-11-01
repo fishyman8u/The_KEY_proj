@@ -1,7 +1,8 @@
 TODO:
 
-//1-Finish animated stick soldier
-2-Enable Shooting
-3-Add basic enemies
-
--continue tutorial after this
+-Fix start menu
+-Add book and options layers/scenes
+implement box2d/bullet
+-fix the AI
+-add sound
+-make plist/tiled generic loadable levels

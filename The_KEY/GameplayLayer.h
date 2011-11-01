@@ -15,8 +15,9 @@
 #import "AFC.h"
 #import "CommonProtocols.h"
 #import "Constants.h"
+#import "bullet.h"
 
-@interface GameplayLayer : CCLayer {
+@interface GameplayLayer : CCLayer <GameplayLayerDelegate> {
     CCSprite *af_marine;
     SneakyJoystick *leftJoystick;
     SneakyJoystick *rightJoystick;

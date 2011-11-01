@@ -30,6 +30,8 @@
 -(CGRect)adjustedBoundingBox;
 -(CCAnimation*)loadPlistForAnimationWithName:(NSString*)animationName
                                 andClassName:(NSString *)className;
+//-(float) getXvelocity;
+//-(float) getYVelocity;
 
 
 @end

@@ -16,8 +16,19 @@
 //#define kRadarDishTagValue 10
 #define kP90_Weapon_Damage 30
 #define kLaser_Weapon_Damage 15
+#define kBulletSpeed 100
+#define kBulletTimeToLive 10
+#define kDefaultFireRate 1
+#define PI 3.14159
+#define RadianConvert PI / 180
+#define DegreeConvert 180 / PI
 
 //Damage will need to be defined some other way, plist?
+typedef struct {
+    float degree, factor;
+}angle_table;
+
+    
 
 
 #endif

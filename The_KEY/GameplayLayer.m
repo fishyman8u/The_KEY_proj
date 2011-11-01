@@ -103,15 +103,38 @@
         [marine setRight_Joystick:rightJoystick];
         [marine setCrouch_Button:crouchButton];
         [marine setProne_Button:proneButton];
+        [marine setTeam:kUSAF];
         [marine setIsPlayerControlled:YES];
+        [marine setDelegate:self];
         [marine setPosition:ccp(screenSize.width *0.5f,screenSize.height *0.5f)];
         [marine setCharacterHealth:100.0f];
         [marine setMovement_speed:30.0f];
         [marine setIsProne:NO];
         [marine setIsCrouching:NO];
+        [crouchButton setIsHoldable:NO];
+        [proneButton setIsHoldable:NO];
         //[crouchButton setIsToggleable:YES];
         //[proneButton setIsToggleable:YES];
         [sceneSpriteBatchNode addChild:marine z:kAFC_Player_Z_Value tag:kAFC_Player_TagValue];
+        
+        
+        
+        //test enemy
+        AFC * marine_opp_for =  [[AFC alloc]initWithSpriteFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"AFC1.png"]];
+        [marine_opp_for setIsPlayerControlled:NO];
+        [marine_opp_for setTeam:kDusan];
+        [marine_opp_for setDelegate:self];
+        [marine_opp_for setPosition:ccp(screenSize.width *0.60f,screenSize.height *0.60f)];
+        [marine_opp_for setCharacterHealth:100.0f];
+        [marine_opp_for setMovement_speed:30.0f];
+        [marine_opp_for setSight_distance:400.0f];
+        [sceneSpriteBatchNode addChild:marine_opp_for z:99];
+        
+        CCLabelTTF *beginLabel = [CCLabelTTF labelWithString:@"Game Start!" fontName:@"Helvetica" fontSize:64];
+        [beginLabel setPosition:ccp(screenSize.width/2,screenSize.height/2)];
+        [self addChild:beginLabel];
+        id label_action = [CCSpawn actions:[CCScaleBy actionWithDuration:2.0f scale:4], [CCFadeOut actionWithDuration:2.0f],nil];
+        [beginLabel runAction:label_action];
         [self scheduleUpdate];
     }
     return self;
@@ -136,5 +159,42 @@
         [tempChar updateStateWithDeltaTime:deltaTime andListofGameObjects:listOfGameObjects];
     //[self applyJoystick:leftJoystick toNode:af_marine forTimeDelta:deltaTime];
     }
+}
+-(void) createObjectOfType:(GameObjectType)objectType withHealth:(int)initialHealth atLocation:(CGPoint)spawnLocation withZValue:(int)Zvalue
+{
+    /*if(objectType == kBullet)
+    {
+        CCLOG(@"Creating bullet object.");
+        bullet *aBullet = [[bullet alloc] initWithSpriteFrameName:@"bullet1.png"];
+    }*/
+    if(objectType == kAFC)
+    {
+        CCLOG(@"Creating AFC object.");
+        AFC *aAFC = [[AFC alloc] initWithSpriteFrameName:@"AFC1.png"];
+        [aAFC setCharacterHealth:initialHealth];
+        [aAFC setPosition:spawnLocation];
+        [sceneSpriteBatchNode addChild:aAFC z:Zvalue];
+        [aAFC setDelegate:self];
+        [aAFC release];
+    }
+}
+-(void) createBulletWithRotation:(float)rotation andVelocity:(float)velocity andPosition:(CGPoint)spawnPosition andtag:(int)tag1
+{
+    CCLOG(@"Creating bullet");
+    bullet *Bullet = [[bullet alloc] initWithSpriteFrameName:@"bullet1.png"];
+    [Bullet setPosition:spawnPosition];
+    [Bullet setOwner_tag:tag1];
+    float x,y, rad_rotation_y, rad_rotation_x;
+    rad_rotation_y = (rotation+90) * RadianConvert;
+    rad_rotation_x = (rotation-90) * RadianConvert;
+   
+    y = velocity * sinf(rad_rotation_y);
+    x = velocity * cosf(rad_rotation_x);
+    [Bullet setXVelocity:x];
+    [Bullet setYVelocity:y];
+    [Bullet changeState:kStateSpawning];
+    [Bullet setRotation:rotation];
+    [sceneSpriteBatchNode addChild:Bullet];
+    [Bullet release];
 }
 @end
