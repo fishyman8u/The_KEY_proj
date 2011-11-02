@@ -8,10 +8,15 @@
 
 #import "CCLayer.h"
 #import "cocos2d.h"
-//#import "Box2D.h"
+#import "Box2D.h"
+#import "GLES-Render.h"
+#import "Constants.h"
+#import "CommonProtocols.h"
+
 @interface Box2D_Test : CCLayer
 {
-    
+    b2World *world;
+    GLESDebugDraw *debugDraw;
 }
 +(id)scene;
 
