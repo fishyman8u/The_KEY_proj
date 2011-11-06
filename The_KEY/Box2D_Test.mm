@@ -57,6 +57,31 @@
     glEnableClientState(GL_COLOR_ARRAY);
     glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 }
+-(void)createGround
+{
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    float32 margin = 10.0f;
+    b2Vec2 lowerLeft = b2Vec2(margin/ PTM_RATIO, margin/PTM_RATIO);
+    b2Vec2 lowerRight = b2Vec2((winSize.width-margin)/PTM_RATIO, margin/PTM_RATIO);
+    b2Vec2 upperRight = b2Vec2((winSize.width-margin)/PTM_RATIO, (winSize.height-margin)/PTM_RATIO);
+     b2Vec2 upperLeft = b2Vec2(margin/PTM_RATIO, (winSize.height-margin)/PTM_RATIO);
+    b2BodyDef groundBodydef;
+    groundBodydef.type = b2_staticBody;
+    groundBodydef.position.Set(0, 0);
+    groundBody = world->CreateBody(&groundBodydef);
+    b2PolygonShape groundShape;
+    b2FixtureDef groundFixtureDef;
+    groundFixtureDef.shape =&groundShape;
+    groundFixtureDef.density = 0.0;
+    groundShape.SetAsEdge(lowerLeft, lowerRight);
+    groundBody->CreateFixture(&groundFixtureDef);
+    groundShape.SetAsEdge(lowerRight, upperRight);
+    groundBody->CreateFixture(&groundFixtureDef);
+    groundShape.SetAsEdge(upperLeft, upperRight);
+    groundBody->CreateFixture(&groundFixtureDef);
+    groundShape.SetAsEdge(lowerLeft, upperLeft);
+    groundBody->CreateFixture(&groundFixtureDef);
+}
 -(void) dealloc
 {
     if(world){
@@ -83,6 +108,7 @@
         CCLabelTTF *label = [CCLabelTTF labelWithString:@"Testing BOX2d system" fontName:@"Helvetica" fontSize:32];
         label.position = ccp(winsize.width/2, winsize.height/2);
         [self addChild:label];
+        [self createGround];
     }
     
     return self;

@@ -17,6 +17,7 @@
 {
     b2World *world;
     GLESDebugDraw *debugDraw;
+    b2Body *groundBody;
 }
 +(id)scene;
 

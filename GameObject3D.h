@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "Constants.h"
 #import "CommonProtocols.h"
+//#import "btBulletDynamicsCommon.h"
 
 @interface GameObject3D : CC3MeshNode
 {
