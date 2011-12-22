@@ -7,9 +7,15 @@
 //
 
 #import "GameObject.h"
+#import "Box2D.h"
 
 @interface GameCharacter : GameObject
 {
+    b2Body *body;
+   // b2World *world;
+    b2Vec2 angular_velocity;
+    
+    
     int characterHealth;
     CharacterStates characterState;
     AI_States characterAIState;
@@ -31,7 +37,9 @@
     float sight_distance;
     float last_time;
 }
-
+-(void) createBodyAtLocation:(CGPoint)location;
+-(void) createBodyAtLocation:(CGPoint)location withDensity:(Float32)density 
+             withRestitution:(Float32)restitution withFriction:(Float32)friction andSize:(CGSize)size;
 -(void) checkAndClampSpritePosition;
 -(int)getWeaponDamage;
 -(void) checkCollisions: (CCArray *) listOfGameObjects;
@@ -43,6 +51,8 @@
 -(void) setTarget:(NSInteger) enemyTag;
 -(void) attackUpdate:(float)deltaTime;
 -(float) findRotation:(CGPoint) origin andTarget:(CGPoint) target;
+@property(assign) b2Body * body;
+@property(assign) b2World *world;
 @property(readwrite) int characterHealth;
 @property(readwrite) CharacterStates characterState;
 @property(readwrite) int owner_tag;
@@ -63,4 +73,5 @@
 @property(readwrite) NSInteger enemy_tag;
 @property(readwrite) float last_time;
 @property(readwrite) NSInteger frameCount;
+@property(readwrite) b2Vec2 angular_velocity;
 @end

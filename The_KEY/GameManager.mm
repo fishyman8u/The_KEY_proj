@@ -7,14 +7,7 @@
 //
 
 #import "GameManager.h"
-#import "GameScene.h"
-#import "Main_Menu.h"
-#import "OptionsScene.h"
-#import "CreditsScene.h"
-#import "IntroScene.h"
-#import "LevelComplete.h"
-#import "GameScene.h"
-#import "GameScene2.h"
+#import "Root_Menu_Scene.h"
 
 @implementation GameManager
 static GameManager * _sharedGameManager = nil;
@@ -60,22 +53,26 @@ static GameManager * _sharedGameManager = nil;
     
     switch (sceneID) {
         case kMainMenuScene:
-            sceneToRun = [Main_Menu node];
+            sceneToRun = [Root_Menu_Scene node];
             break;
         case kOptionsScene:
-            sceneToRun = [OptionsScene node];
+            //sceneToRun = [OptionsScene node];
         case kCreditsScene:
-            sceneToRun = [CreditsScene node];
+           // sceneToRun = [CreditsScene node];
         case kGameLevel1:
             CCLOG(@"Running initial test scene");
-            sceneToRun = [GameScene node];
+            sceneToRun = [IID_Game_Scene node];
+            if([sceneToRun initializeSceneWithTileMapFile:@"test_level.tmx"])
+            {
+                CCLOG(@"Scene loaded!");
+            }
             break;
         case kGameLevel2:
             CCLOG(@"Running scene 2");
-            sceneToRun = [GameScene2 node];
+          //  sceneToRun = [GameScene2 node];
             break;
         case kBoxTest:
-            sceneToRun = [Box2D_Test scene];
+          //  sceneToRun = [Box2D_Test scene];
             break;
         case kLevelCompleteScene:
             break;

@@ -66,12 +66,15 @@
     //Main Menu
     CCMenuItemImage *playGameButton = [CCMenuItemImage itemFromNormalImage:@"button.png" selectedImage:@"button1.png" disabledImage:nil target:self selector:@selector(displaySceneSelection)];
     CCMenuItemLabel *play_the_game = [CCMenuItemLabel itemWithLabel:playgame];
+    
     CCMenuItemLabel *open_options = [CCMenuItemLabel itemWithLabel:options];
     CCMenuItemLabel *open_the_book = [CCMenuItemLabel itemWithLabel:getTheKeyBook];
     CCMenuItemImage *optionsButton = [CCMenuItemImage itemFromNormalImage:@"button.png" selectedImage:@"button1.png" disabledImage:nil target:self selector:@selector(showOptions)];
     CCMenuItemImage *bookButton = [CCMenuItemImage itemFromNormalImage:@"button.png" selectedImage:@"button1.png" disabledImage:nil target:self selector:@selector(buyBook)];
-    
-    mainMenu = [CCMenu menuWithItems:play_the_game, playGameButton, open_options, open_the_book, optionsButton, bookButton, nil];
+    [playGameButton addChild:play_the_game];
+    [optionsButton addChild:open_options];
+    [bookButton addChild:open_the_book];
+    mainMenu = [CCMenu menuWithItems: playGameButton, optionsButton, bookButton, nil];
     [mainMenu alignItemsVerticallyWithPadding:screenSize.height *0.059f];
     [mainMenu setPosition:ccp(screenSize.width *2, screenSize.height / 2)];
     id moveAction = [CCMoveTo actionWithDuration:1.2f position:ccp(screenSize.width *0.85f, screenSize.height/2)];

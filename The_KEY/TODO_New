@@ -1,0 +1,26 @@
+-Continue filling out classes until functional using old ones as a guide, try to simplify and clean up as I go.
+    -currently two tasks: 1.Get the AFC unit functional again
+                          2.Get a tilemap template up and running for loading
+-Make a simple tile level to test the TMX file object loading with
+-^^once that is working, establish a solid level template file
+-set up menus, try to make them somewhat presentable
+-update animations, states, and texture atlases
+-set up AI decision trees and state machines
+-sounds?
+-once AI is functioning, begin setting up 2D levels
+-particle effects
+
+^^^get art established for this portion with Elizabeth and Paul
+
+-Get a simple 3D proof of concept layer
+-Add bullet to the sample layer
+-Add UI
+-Create some "space" for the models
+-set up objects, and level constuction methods
+-begin planning and creating AI
+-Begin creating levels/sounds/more detailled space
+-create levels
+
+^^work on cutscenes and sound for in-between levels.
+
+Once singleplayer campaign mode is rolling, start planning some freeplay modes.

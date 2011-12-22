@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Test_Tileset" tilewidth="32" tileheight="32" spacing="2">
+  <image source="Test_Tileset.png" width="128" height="128"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt0SEOACAMBMEr/380vgpHCSPGb7KVpAAetprbPb/zY47+whM/8AMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADizAWcYJys=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="100" height="100">
+  <object name="Testing" type="AFC" x="286" y="26" width="50" height="56"/>
+  <object name="Testing2" type="AFC" x="381" y="57" width="50" height="56"/>
+ </objectgroup>
+</map>

@@ -16,12 +16,14 @@
     if (self) {
         // Initialization code here.
         controlLayer = [ControlLayer2d node];
-        [self addChild:controlLayer z:2 tag:2];
+        [self addChild:controlLayer z:3 tag:2];
         
-        Scrolling_Tilemap_Gameplay_test * scrolling_layer = [Scrolling_Tilemap_Gameplay_test node];
-        [self addChild:scrolling_layer z: 1 tag: 1];
+        Default_Tile_Layer* scrolling_layer = [Default_Tile_Layer node];
+        [self addChild:scrolling_layer z: 0 tag: 1];
+        Default_GameplayLayer *gameplay_layer = [Default_GameplayLayer node];
+        [self addChild:gameplay_layer z:2 tag:3];
         //connect joystick and buttons
-        [scrolling_layer connectControlsWithRightJoystick:[controlLayer rightJoystick] andLeftJoystick:[controlLayer leftJoystick] andProneButton:[controlLayer proneButton] andCrouchButton:[controlLayer crouchButton]];
+        [gameplay_layer connectControlsWithRightJoystick:[controlLayer rightJoystick] andLeftJoystick:[controlLayer leftJoystick] andProneButton:[controlLayer proneButton] andCrouchButton:[controlLayer crouchButton]];
     }
     
     return self;

@@ -21,11 +21,12 @@ extern "C" {
     //cc3v
     self.isTouchEnabled = NO;
     camera = [CC3Camera nodeWithName:@"Camera"];
-    camera.location = CC3VectorMake(0, 0, 0);
+    //camera.location = CC3VectorMake(0, 0, 0);
     [self addChild:camera];
+    [self setActiveCamera:camera];
     
     CC3Light * light = [CC3Light nodeWithName:@"Light"];
-    [light setLocation:CC3VectorMake(0, 0, 0)];
+    //[light setLocation:CC3VectorMake(0, 0, 0)];
     
     light.isDirectionalOnly = NO;
     [camera addChild:light];
@@ -45,7 +46,19 @@ extern "C" {
     //Phase 2: Plist object adding
     //Phase 3: level Plist loading
     
+    [self addContentFromPODResourceFile:@"Hellfire_draft7.pod" withName:@"hellfire"];
+    hellfire = [CC3MeshNode nodeWithName:@"hellfire"];
+    btCollisionObject *hellfire_collision_obj = new btCollisionObject();
+    btSphereShape *sphere = new btSphereShape(10);
+    hellfire_collision_obj->setCollisionShape(sphere);
+    hellfire_collision_obj->setUserPointer(hellfire);
     
+    dynamicsWorld->addCollisionObject(hellfire_collision_obj);
+    
+    [self addChild:hellfire];
+   
+    [camera setTarget:hellfire];
+   // [self.activeCamera trackTargetWithVisitor:<#(CC3NodeTransformingVisitor *)#>
     //schedule update
     
     //set default variable values
@@ -56,6 +69,15 @@ extern "C" {
 -(void) update:(ccTime)deltaTime
 {
     
+    dynamicsWorld->btDynamicsWorld::stepSimulation(deltaTime);
+    btCollisionObjectArray array = dynamicsWorld->getCollisionObjectArray();
+    int count = dynamicsWorld->getNumCollisionObjects();
+    for(int a = 0; a < count; a++)
+    {
+        btCollisionObject *obj = array[a];
+        btTransform position = obj->getWorldTransform();
+        
+    }
 }
 -(void) updatePhysics:(ccTime)deltaTime
 {

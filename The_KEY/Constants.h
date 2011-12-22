@@ -10,6 +10,7 @@
 #define The_KEY_Constants_h
 #define kAFC_Player_Z_Value 100
 #define kAFC_Player_TagValue 0
+#define kWorldNodeTag 1
 #define kAFC_Player_idle_timer 3.0f
 //#define kVikingFistDamage 10
 //#define kVikingHammerDamage 40

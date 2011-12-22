@@ -5,7 +5,8 @@
 //  Created by Nathan Jones on 10/8/11.
 //  Copyright 2011 Student. All rights reserved.
 //
-
+#include "Box2D.h"
+//#import "IID_Game_Character.h"
 #ifndef The_KEY_CommonProtocols_h
 #define The_KEY_CommonProtocols_h
 #define kMainMenuTagValue 10
@@ -131,13 +132,20 @@ typedef struct {
 -(void) createObjectOfType:(GameObjectType)objectType 
 withHealth:(int) initialHealth
 atLocation:(CGPoint)spawnLocation
-                                    withZValue:(int)Zvalue;
--(void)createBulletWithRotation:(float)rotation
-                    andVelocity:(float)velocity
-                    andPosition:(CGPoint) spawnPosition
-                         andtag:(int) tag1;
-
-
+                                    withZValue:(int)Zvalue
+andTag:(int)tag;
+/*
+-(void) createBodyAtLocation:(CGPoint)location 
+forSprite:(IID_Game_Character *)sprite friction:(float32)friction      
+restitution:(float32)restitution density:(float32)density 
+isBox:(BOOL)isBox;
+//-(void)createBulletWithRotation:(float)rotation
+                 //   andVelocity:(float)velocity
+                 //   andPosition:(CGPoint) spawnPosition
+                 //        andtag:(int) tag1;
+*/
+-(b2World *) getRefToWorld;
 
 @end
+
 #endif

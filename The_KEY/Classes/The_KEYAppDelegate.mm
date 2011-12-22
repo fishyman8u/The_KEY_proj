@@ -12,8 +12,9 @@
 #import "The_KEYLayer.h"
 #import "The_KEYWorld.h"
 #import "CC3EAGLView.h"
-#import "GameScene.h"
-#import "Main_Menu.h"
+#import "Root_Menu_Scene.h"
+//#import "GameScene.h"
+//#import "Main_Menu.h"
 @implementation The_KEYAppDelegate
 
 @synthesize window;
@@ -125,7 +126,7 @@
 //	CCScene *scene = [CCScene node];
 //	[scene addChild: mainLayer];
 //	[[CCDirector sharedDirector] runWithScene: scene];
-    [[CCDirector sharedDirector] runWithScene:[Main_Menu node]];
+    [[CCDirector sharedDirector] runWithScene:[Root_Menu_Scene node]];
 	
 }
 

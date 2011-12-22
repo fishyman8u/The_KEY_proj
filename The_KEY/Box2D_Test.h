@@ -12,12 +12,13 @@
 #import "GLES-Render.h"
 #import "Constants.h"
 #import "CommonProtocols.h"
-
+#import "GameCharacter.h"
 @interface Box2D_Test : CCLayer
 {
     b2World *world;
     GLESDebugDraw *debugDraw;
     b2Body *groundBody;
+     CCSpriteBatchNode *sceneSpriteBatchNode;
 }
 +(id)scene;
 

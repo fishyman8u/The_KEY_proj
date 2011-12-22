@@ -6,9 +6,9 @@
 //  Copyright 2011 Student. All rights reserved.
 //
 
-#import "Generic_Soldier.h"
+#import "IID_Generic_Soldier.h"
 
-@interface AFC : Generic_Soldier
+@interface AFC : IID_Generic_Soldier
 {
         
 }

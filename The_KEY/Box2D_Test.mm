@@ -102,6 +102,18 @@
     if (self) {
         [self setupWorld];
         [self setupDebugDraw];
+        if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+            //[af_marine setScaleX:screenSize.width/1024.0f];
+            //[af_marine setScaleY:screenSize.height/768.0f];
+            [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"Standins Sheet_default.plist"];
+            sceneSpriteBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"Standins Sheet_default.png"];
+        }
+        else
+        {
+            [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"Standins Sheet_default.plist"];
+            sceneSpriteBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"Standins Sheet_default.png"];
+        }
+
         [self scheduleUpdate];
         self.isTouchEnabled = YES;
         CGSize winsize = [CCDirector sharedDirector].winSize;
@@ -118,9 +130,38 @@
     [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
 }
 -(void)update:(ccTime)dt{
+   /* static double UPDATE_INTERVAL = 1.0f/60.0f;
+    static double MAX_CYCLES_PER_FRAME = 5;
+    static double timeAccumulator = 0;
+    
+    timeAccumulator += deltaTime;    
+    if (timeAccumulator > (MAX_CYCLES_PER_FRAME * UPDATE_INTERVAL)) {
+        timeAccumulator = UPDATE_INTERVAL;
+    }    
+    */
     int32 velocityIterations = 3;
-    int32 postionInterations = 2;
-    world->Step(dt, velocityIterations, postionInterations);
+    int32 positionIterations = 2;
+    //while (timeAccumulator >= UPDATE_INTERVAL) {        
+     //   timeAccumulator -= UPDATE_INTERVAL;        
+        world->Step(dt, 
+                    velocityIterations, positionIterations);        
+   // }
+    for (b2Body *b=world->GetBodyList(); b!=NULL; b=b->GetNext()) {
+        if (b->GetUserData() != NULL) {
+            GameCharacter *sprite = (GameCharacter *) b->GetUserData();
+            sprite.position = ccp(b->GetPosition().x * PTM_RATIO, 
+                                  b->GetPosition().y * PTM_RATIO);
+            sprite.rotation = 
+            CC_RADIANS_TO_DEGREES(b->GetAngle() * -1);
+        }
+         //update states of objects HERE
+        CCArray *listOfGameObjects = [sceneSpriteBatchNode children];
+        for (GameCharacter *tempChar in listOfGameObjects) {
+            [tempChar updateStateWithDeltaTime:dt andListofGameObjects:listOfGameObjects];
+            //[self applyJoystick:leftJoystick toNode:af_marine forTimeDelta:deltaTime];
+        }  
+       //ai update here
+    }
 }
 -(BOOL) ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {

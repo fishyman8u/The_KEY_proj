@@ -154,6 +154,7 @@
 }
 -(void)update:(ccTime)deltaTime
 {
+    
     CCArray *listOfGameObjects = [sceneSpriteBatchNode children];
     for (GameCharacter *tempChar in listOfGameObjects) {
         [tempChar updateStateWithDeltaTime:deltaTime andListofGameObjects:listOfGameObjects];
@@ -192,6 +193,7 @@
     x = velocity * cosf(rad_rotation_x);
     [Bullet setXVelocity:x];
     [Bullet setYVelocity:y];
+    [Bullet setAngular_velocity:b2Vec2(x, y)];
     [Bullet changeState:kStateSpawning];
     [Bullet setRotation:rotation];
     [sceneSpriteBatchNode addChild:Bullet];

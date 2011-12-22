@@ -22,6 +22,7 @@
     //attach controls to the camera
     //add other ships with collision bodies
     CC3Camera *camera;
+    CC3MeshNode *hellfire;
     
     bool reset;
     int steps;

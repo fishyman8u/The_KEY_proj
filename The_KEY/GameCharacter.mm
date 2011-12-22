@@ -9,6 +9,8 @@
 #import "GameCharacter.h"
 
 @implementation GameCharacter
+@synthesize body;
+@synthesize world;
 @synthesize characterState;
 @synthesize characterHealth;
 @synthesize owner_tag;
@@ -29,10 +31,68 @@
 @synthesize enemy_tag;
 @synthesize last_time;
 @synthesize frameCount;
+@synthesize angular_velocity;
+
 -(void) dealloc
 {
+    world->DestroyBody(body);
+    world = NULL;
+    
+    
     [super dealloc];
 }
+
+//new stuff with BOX2d
+//need a delegate
+-(void) createBodyAtLocation:(CGPoint)location
+{
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
+    body = world->CreateBody(&bodyDef);
+    body->SetUserData(self);
+    
+    b2FixtureDef fixtureDef;
+    b2PolygonShape shape;
+    shape.SetAsBox(self.contentSize.width/2/PTM_RATIO, self.contentSize.height/2/PTM_RATIO);
+    
+    fixtureDef.shape = &shape;
+    fixtureDef.restitution = .1;
+    fixtureDef.density =1;
+    fixtureDef.friction =1;
+    
+    //b2JointDef test_joint;
+   // test_joint.
+    body->CreateFixture(&fixtureDef);
+    //body->
+    
+}
+-(void) createBodyAtLocation:(CGPoint)location withDensity:(Float32)density withRestitution:(Float32)restitution withFriction:(Float32)friction andSize:(CGSize)size
+{
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
+    body = world->CreateBody(&bodyDef);
+    body->SetUserData(self);
+    
+    b2FixtureDef fixtureDef;
+    b2PolygonShape shape;
+    shape.SetAsBox(size.width/2/PTM_RATIO, size.height/2/PTM_RATIO);
+    
+    fixtureDef.shape = &shape;
+    fixtureDef.restitution = restitution;
+    fixtureDef.density = density;
+    fixtureDef.friction = friction;
+    
+    //b2JointDef test_joint;
+    // test_joint.
+    body->CreateFixture(&fixtureDef);
+    //body->
+    
+}
+
+//use angular velocity to set movement
+//Old Code
 -(void) chooseTarget:(CCArray*) listOfGameObjects 
 {
     if(isEnemySet) return;
@@ -448,9 +508,11 @@
     self = [super init];
     if (self) {
         // Initialization code here.
+        world = [delegate getRefToWorld];
         owner_tag = 0;
         angle_adjustment =0;
         isEnemySet = NO;
+        [self createBodyAtLocation:self.position withDensity:1.0f withRestitution:0.2f withFriction:1.0f andSize:self.contentSize];
     }
     
     return self;

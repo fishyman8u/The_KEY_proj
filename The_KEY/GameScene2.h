@@ -10,6 +10,8 @@
 #import "cocos2d.h"
 #import "ControlLayer2d.h"
 #import "Scrolling_Tilemap_Gameplay_test.h"
+#import "Default_Tile_Layer.h"
+#import "Default_GameplayLayer.h"
 
 @interface GameScene2 : CCScene
 {

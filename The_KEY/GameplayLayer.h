@@ -16,6 +16,7 @@
 #import "CommonProtocols.h"
 #import "Constants.h"
 #import "bullet.h"
+#import "Box2D.h"
 
 @interface GameplayLayer : CCLayer <GameplayLayerDelegate> {
     CCSprite *af_marine;
@@ -25,6 +26,7 @@
     SneakyButton *proneButton;
     //SneakyButton *attackButton;
     CCSpriteBatchNode *sceneSpriteBatchNode;
+    
 }
 
 @end

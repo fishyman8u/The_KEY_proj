@@ -9,22 +9,24 @@
 #import "GameObject3D.h"
 
 @implementation GameObject3D
+@synthesize isActive;
+@synthesize gameObjectType;
 
 - (id)init
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+      // CC3PODResource *resource = [CC3PODResource resourceFromFile:<#(NSString *)#> // Initialization code here.
     }
     
     return self;
 }
 -(void) changeState:(CharacterStates)newState
 {
-    
+    CCLOG(@"GameObject3D-> need to override changestate function!");
 }
 -(void) updateStateWithDeltaTime:(ccTime)deltaTime andListofGameObjects:(CCArray *)listOfGameObjects
 {
-    
+    CCLOG(@"GameObject3D-> need to override updatestate function!");
 }
 @end
